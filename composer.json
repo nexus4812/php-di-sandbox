@@ -19,7 +19,8 @@
     },
     "scripts": {
         "fixer": [
-            "vendor/bin/php-cs-fixer fix src --rules=@Symfony,@PhpCsFixer,@PHP80Migration,declare_strict_types --allow-risky=yes"
+            "vendor/bin/php-cs-fixer fix src --rules=@Symfony,@PhpCsFixer,@PHP80Migration,declare_strict_types --allow-risky=yes",
+            "vendor/bin/php-cs-fixer fix test --rules=@Symfony,@PhpCsFixer,@PHP80Migration,declare_strict_types --allow-risky=yes"
         ]
     }
 }
