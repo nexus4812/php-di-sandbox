@@ -1,0 +1,25 @@
+{
+    "name": "my/php-di-sandbox",
+    "autoload": {
+        "psr-4": {
+            "My\\PhpDiSandbox\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "My\\PhpDiSandbox\\": "test/"
+        }
+    },
+    "require": {
+        "symfony/dependency-injection": "^6.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.13",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "fixer": [
+            "vendor/bin/php-cs-fixer fix src --rules=@Symfony,@PhpCsFixer,@PHP80Migration,declare_strict_types --allow-risky=yes"
+        ]
+    }
+}
