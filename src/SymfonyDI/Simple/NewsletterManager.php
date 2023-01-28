@@ -13,9 +13,6 @@ class NewsletterManager
     {
     }
 
-    /**
-     * @return Mailer
-     */
     public function getMailer(): Mailer
     {
         return $this->mailer;
