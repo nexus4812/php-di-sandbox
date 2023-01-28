@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace My\PhpDiSandbox\SymfonyDI;
+namespace My\PhpDiSandbox\SymfonyDI\Simple;
 
 class Mailer
 {
@@ -10,9 +10,6 @@ class Mailer
     {
     }
 
-    /**
-     * @return string
-     */
     public function getTransport(): string
     {
         return $this->transport;
