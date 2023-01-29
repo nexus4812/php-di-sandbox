@@ -9,6 +9,7 @@ use DI\Container;
 use function DI\create;
 
 use PHPUnit\Framework\TestCase;
+use function DI\get;
 
 /**
  * @internal
@@ -30,7 +31,7 @@ class MailerTest extends TestCase
 
         // Mailerに依存したUserManagerをサービスコンテナから生成
         $userManager = $container->make(UserManager::class, [
-            'mailer' => $mailer,
+            'mailer' => get(Mailer::class),
         ]);
         $this->assertInstanceOf(UserManager::class, $userManager);
     }
