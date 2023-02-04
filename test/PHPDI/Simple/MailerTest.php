@@ -34,5 +34,10 @@ class MailerTest extends TestCase
             'mailer' => get(Mailer::class),
         ]);
         $this->assertInstanceOf(UserManager::class, $userManager);
+
+        $container->call(function (Mailer $mailer) {
+            // callableな形でも呼び出しができる
+            $this->assertInstanceOf(Mailer::class, $mailer);
+        });
     }
 }
