@@ -24,5 +24,10 @@
             "vendor/bin/php-cs-fixer fix src --rules=@Symfony,@PhpCsFixer,@PHP80Migration,declare_strict_types --allow-risky=yes",
             "vendor/bin/php-cs-fixer fix test --rules=@Symfony,@PhpCsFixer,@PHP80Migration,declare_strict_types --allow-risky=yes"
         ]
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.9"
+        }
     }
 }
