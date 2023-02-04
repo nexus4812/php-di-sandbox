@@ -7,9 +7,9 @@ namespace My\PhpDiSandbox\PHPDI\Simple;
 use DI\Container;
 
 use function DI\create;
+use function DI\get;
 
 use PHPUnit\Framework\TestCase;
-use function DI\get;
 
 /**
  * @internal
